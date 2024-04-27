@@ -48,6 +48,10 @@
  VAT_expand_the_vatican_forces_desc:0 "It is not enough to equip our divisions, we must train many more if the Vatican's defences are to hold out against enemy attack. The Pope must make a proclamation to the Christian world, a cry for any able-bodied man that still holds the gospels sacred to come to the city and pledge his life to defend it."
  VAT_study_foreign_designs:0 "Study Foreign Designs"
  VAT_study_foreign_designs_desc:0 "It is known far and wide that the Vatican library contain priceless knowledge and precious texts of antique origin, but one thing it most certaintly does not contain are the schema for constructing a heavy machine gun. It is time for us to employ the expertise of foreign manufacturers, to study their designs as intensely as the monk studies scripture."
+ VAT_motorise_the_guard:0 "Motorise the Guard"
+ VAT_motorise_the_guard_desc:0 "The Great War taught us many terrible lessons. Among them, that the age of the soldier on horseback is swiftly coming to its close. If the Palatine Guard is to truly modernise, it must be able to mobilise with the same swiftness as our enemies."
+ VAT_panoply_for_the_guard:0 "Panoply for the Guard"
+ VAT_panoply_for_the_guard_desc:0 "Like the Rome and the Byzantium of old, so too must the Papal Guard acquire protection capable of stopping it's enemies.\nSadly we don't exactly have much knowledge in this area, but we do know people who. Surely the Germans will be more than happy to negotiate their knowledge of armor technology in exchange for some... Papal endorsement."
  VAT_production_boost:0 "Production Standardisation"
  VAT_production_boost_desc:0 "Now that we have the knowledge to construct weapons, we must seek out the means - we must establish production lines as soon as possible and maintain a high level of manufacturing speed and quality."
  VAT_grounded_ambitions:0 "Grounded Ambitions"
@@ -59,13 +63,15 @@
  VAT_wielders_of_the_flaming_sword:0 "Wielders of the Flaming Sword"
  VAT_palatine_armoured_unit:0 "Palatine Armoured Units"
  VAT_papal_peacemakers:0 "Papal Peacemakers"
- VAT_mechanised_army_of_god:0 "A Mechanised Army of God"
+ VAT_mechanised_army_of_god:0 "The Mechanised Guard"
  VAT_vatican_defence_array_desc:0 "A strong Papal Guard will only serve to defend us in short-term sieges. If the Vatican is to become a stronghold, we will need an advanced defensive array."
  VAT_mechanised_army_of_god_desc:0 "Our motorisation efforts cannot lose momentum. An army's strength is futile if it is not coupled with speed."
  VAT_wielders_of_the_flaming_sword_desc:0 "Just as God tasked the angels with defending the Gates of Eden with a mighty flaming sword, we will stand firm against any enemy."
  VAT_palatine_armoured_unit_desc:0 "Motorisation is just one step towards a glorious and unshakeable military force. Since the Great War, armour has become increasingly vital in warfare and so we must adapt to survive."
- VAT_papal_peacemakers_desc:0 "Our armoured technology remains far behind that of our foes. However, our advantage is that foreign designs can be copied and altered to suit our needs, we are not starting from scratch. Soon, tank divisions bearing our insignia will be rolling across the fields of Europe."
+ VAT_papal_peacemakers_desc:0 "Our armoured technology, despite having developed with our business deal with the German state, still remains far behind that of our foes. However, our advantage is that foreign designs can be copied and altered to suit our needs, we are not starting from scratch. Soon, tank divisions bearing our insignia will be rolling across the fields of Europe."
  VAT_arditi_pontificia_desc:0 "An army capable of a broad range of operations is invaluable to us, but as time goes on, we will need to create specialised divisions."
+ VAT_army_of_god:1 "Army of God"
+ VAT_army_of_god_desc:0 "God is with us!\n\nAnd if the Lord is in our favour, then who could possibly be against us?\n\n§HNobody.§!"
 
 
 #INDUSTRIAL / AIR / NAVY FOCUS TREE
