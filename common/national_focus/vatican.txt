@@ -184,6 +184,27 @@ focus_tree = {
 		}
 	}
 
+        #Panoply for the Guard - ( reza additions )
+	focus = {
+		id = VAT_panoply_for_the_guard
+		icon = GFX_goal_generic_army_tanks
+		x = 3
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = VAT_motorise_the_guard  }
+		completion_reward = {
+			add_tech_bonus = {
+ 				bonus = 1.5
+				uses = 1
+				category = armor
+			}
+			add_offsite_building = { type = arms_factory level = 1 }
+		}
+	}
+
 	#Vatican Defence Array
 	focus = {
 		id = VAT_vatican_defence_array
@@ -282,6 +303,24 @@ focus_tree = {
 				bonus = 1
 				uses = 1
 				category = mountaineers_tech
+			}
+		}
+	}
+
+        #Army of God - ( reza additions )
+        focus = {
+		id = VAT_army_of_god
+		icon = GFX_focus_NORDIC_mon_selector_army
+		x = 1
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = VAT_grand_ambitions focus = VAT_grounded_ambitions }
+		completion_reward = {
+			add_ideas = {
+				VAT_army_of_god_idea
 			}
 		}
 	}
