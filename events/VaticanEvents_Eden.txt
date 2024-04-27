@@ -763,3 +763,49 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = earthambition.1
+	desc = earthambition.desc
+	title = earthambition.t
+	picture = GFX_
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = earthambition.a
+		VAT = { add_ideas = VAT_earth_ambitions }
+	}
+}
+
+country_event = {
+	id = humanitysaved.0
+	desc = "placeholder"
+	title = "Humanity Redeemed"
+	picture = GFX_
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = "And so it is done."
+	}
+}
+
+
+country_event = { # "event to mark tree layout as dirty, use it if you want" - reza
+	id = VAT_dirtmark.1
+	desc = "THIS SHIT IS DIRTY"
+	title = "WTF"
+	picture = GFX_focus_attack_germany
+
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = "CLEAN OR CLEAN"
+		VAT = {
+		mark_focus_tree_layout_dirty = yes 
+		}
+	}
+}
