@@ -14,6 +14,9 @@
  grand_ambitions_idea_desc:0 "If the Papacy is to survive in this rapidly changing world, it must first and foremost acknowledge that enemies lurk from all sides - we must never forget that the history of Christianity is a story of constant struggle."
  militarisation_papal:0 "Papal Militarisation"
  aerial_supremacy:0 "Aerial Supremacy"
+ # reza #
+ VAT_army_of_god_idea:0 "Army of God"
+ VAT_army_of_god_idea_desc:0 "Our army has been blessed by God himself!\n\nOur adversaries on the battlefield cannot help but kneel and weep at the sight of our most glorious and holiest of armed forces.\n\n§HGod is with us!§!"
  
  engineering_commission:0 "Papal Engineering Commission"
  engineering_commission_desc:0 "A central commission tasked with designing and maintaining the city state's production processes will ensure far greater efficiency - his Holiness the Pope cannot be expected to do all the work."
