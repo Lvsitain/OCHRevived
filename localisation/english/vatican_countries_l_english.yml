@@ -994,3 +994,7 @@ UDM_VAT_communism_subject_def:0 "the Communion of $NONIDEOLOGY$"
 CHU_VAT_communism_subject_def:0 "the Communion of $NONIDEOLOGY$"
 MEL_VAT_communism_subject_def:0 "the Communion of $NONIDEOLOGY$"
 KOS_VAT_communism_subject_def:0 "the Communion of $NONIDEOLOGY$"
+
+# reza - puppets here too because why not #
+LBA_VAT:0 "Papal Authority of North Africa"
+LBA_VAT_subject:0 "Papal Authority of North Africa"
