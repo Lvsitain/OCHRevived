@@ -5,6 +5,12 @@
 		color = rgb { 237 186 0 }
 		color_ui = rgb { 237 186 0 }
 	}
+        #reza - "tried to make puppet italy (the not fighting mussolini one) yellow again.
+        #        making pacelli the leader broke the color for some reason"
+        ITA_PAP_sub = {
+		color = rgb { 237 186 0 }
+		color_ui = rgb { 237 186 0 }
+	}
 
 # DELIGHTS
 
