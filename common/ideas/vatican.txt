@@ -881,8 +881,10 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				justify_war_goal_time = -0.3
-				generate_wargoal_tension = -0.8
+				weekly_manpower = 1000
+				surrender_limit = 1
+				stability_weekly_factor = 0.1
+				war_support_weekly_factor = 0.1
 			}
 		}
 		never_sip_with_the_devil = {
