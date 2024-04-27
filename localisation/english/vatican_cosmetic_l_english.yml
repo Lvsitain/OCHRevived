@@ -88,3 +88,7 @@
      LIL_VAT:0 "Regional Syndicates of Harmonia"
      LIL_VAT_DEF:0 "the Regional Syndicates of Harmonia"
      LIL_VAT_ADJ:0 "Harmonian"
+
+# holy / demonic puppets #
+ LBA_VAT:0 "Papal Authority of North Africa"
+ LBA_VAT_subject:0 "Papal Authority of North Africa"     
