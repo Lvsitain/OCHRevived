@@ -1,6 +1,6 @@
 focus_tree = {
 	id = vatican_tree
-	continuous_focus_position = { x = 20 y = 850 }
+	continuous_focus_position = { x = 4000 y = 1500 } # reza - "was too close to some focuses and was on top of others" #
 	country = {
 		factor = 0
 		modifier = {
