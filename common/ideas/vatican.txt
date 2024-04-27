@@ -169,6 +169,31 @@ ideas = {
 				army_speed_factor = 0.1
 			}
 		}
+		VAT_earth_ambitions = {
+			picture = GFX_idea_FRA_la_deluge
+
+			allowed = {
+				original_tag = "VAT"
+			}
+
+			available = {}
+
+			cancel = {}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				army_attack_factor = 0.25
+				army_defence_factor = 0.25
+				army_morale_factor = 0.15
+				attrition = -0.15
+				army_speed_factor = 0.25
+			}
+		}
 		engineering_commission = {
 			picture = strategic_bombing_focus
 			
