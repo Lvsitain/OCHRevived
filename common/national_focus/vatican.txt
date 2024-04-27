@@ -1409,17 +1409,31 @@ focus_tree = {
 				}
 			}
 		}
-		completion_reward = {
-			hidden_effect = {
-				ITA = {
-					kill_ideology_leader = fascism
-					promote_character = {
-						character = ITA_eugenio_pacelli
-						ideology = papacy
-					}
-					set_cosmetic_tag = PAP_ITA
-				}
+		completion_reward = { #reza - "now pacelli is actually leading neutral" #
+		ITA = {  #reza - "suiz you fucking retard, how is pacelli gonna lead italy if it doesnt even have him as a character" (Why i added the italy history file) #
+		kill_ideology_leader = fascism
+		set_politics = {
+	                ruling_party = neutrality
+	                elections_allowed = no
+	                last_election = "1935.12.17"
+	                election_frequency = 48
+	                long_name = "Italian Curia"
+	                name = "Italian Curia"
+                    }
+		kill_ideology_leader = neutrality
+                add_country_leader_role = {
+                    character = ITA_eugenio_pacelli
+                    promote_leader = yes
+                    country_leader = {
+                        ideology = papacy
+                        expire = "1965.1.1.1"
+                    }
+                }
+                set_popularities = {
+	                neutrality = 100
+                            }
 			}
+		
 			
 			transfer_state = 158
 			add_state_core = 158
@@ -1456,6 +1470,7 @@ focus_tree = {
    						name =  ITA_fascism_papal_party
 					}
 					load_focus_tree = generic_focus
+					set_cosmetic_tag = PAP_ITA
 				}
 			}
 		}
@@ -1629,7 +1644,7 @@ focus_tree = {
 		prerequisite = { focus = VAT_declare_the_papal_states  }
 		completion_reward = {
 			hidden_effect = { 
-					mark_focus_tree_layout_dirty = yes
+		        mark_focus_tree_layout_dirty = yes
 			}
 			custom_effect_tooltip = visions_tooltip
 			country_event = { id = vatican.26 days = 1 }
@@ -3736,15 +3751,83 @@ focus_tree = {
 		icon = GFX_focus_spr_anarchism_knows_no_borders
 		x = 5
 		y = 18
-		cost = 10
+		cost = 6
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = VAT_CAROLINGIAN_LEGACY focus = VAT_BYZANTIUM }
 		completion_reward = {
-			set_rule = { can_declare_war_on_same_ideology = yes }
-			set_rule = { can_only_justify_war_on_threat_country = no }
 			add_ideas = christian_zeal
+			VAT = {
+				every_other_country = {
+					ROOT = {
+						create_wargoal = {
+                        type = annex_everything
+                            target = PREV
+                        }
+				    }
+			    }
+			mark_focus_tree_layout_dirty = yes 
+			}
+			hidden_effect = {
+					set_rule = { can_declare_war_on_same_ideology = yes }
+			        set_rule = { can_only_justify_war_on_threat_country = no }
+				}
+		    }
+	    }
+
+	focus = {
+		id = VAT_earthly_ambitions
+		icon = GFX_focus_spr_anarchism_knows_no_borders
+		x = 5
+		y = 19
+
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+
+		available = {
+		}
+
+		prerequisite = { focus = VAT_spread_christianity }
+		completion_reward = {
+			VAT = { country_event = earthambition.1 }
+			mark_focus_tree_layout_dirty = yes 
+			}
+		}
+
+	focus = {
+		id = VAT_humanity_redeemed
+		icon =  GFX_focus_generic_monarchy_1
+		
+        allow_branch = { has_completed_focus = VAT_earthly_ambitions }
+
+		x = 5
+		y = 22
+
+		cost = 0.8
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+
+		available = { 
+			OR = {
+			    all_state = {
+			 	is_owned_by = VAT
+			    }
+				all_state = {
+				is_fully_controlled_by = VAT
+			    }
+			}
+		}
+
+		prerequisite = { focus = VAT_earthly_ambitions }
+		
+		completion_reward = {
+			VAT = {
+				country_event = humanitysaved.0
+			}
 		}
 	}
 
