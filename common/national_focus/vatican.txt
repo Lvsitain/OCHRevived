@@ -3487,13 +3487,18 @@ focus_tree = {
 					set_cosmetic_tag = PAP_FRA
 					kill_ideology_leader = democratic
 					add_country_leader_role = {
-                    character = FRA_verdier
-                    promote_leader = yes
-                    country_leader = {
-                        ideology = liberalism
-                        expire = "1965.1.1.1"
-                        }
-                    }
+                                        character = FRA_verdier
+                                        promote_leader = yes
+                                        country_leader = {
+                                                ideology = liberalism
+                                                expire = "1965.1.1.1"
+                                                }
+                                         }
+                                         promote_character = {
+				                character = FRA_verdier
+				                ideology = liberalism
+				                expire = "1965.1.1.1"
+				                }
 					set_party_name = {
 						ideology = democratic
 						long_name = "Holy French Senate"
@@ -3570,13 +3575,18 @@ focus_tree = {
 						set_cosmetic_tag = PAP_ENG
 						kill_ideology_leader = democratic
 						add_country_leader_role = {
-                            character = ENG_lang
-                            promote_leader = yes
-                            country_leader = {
-                                ideology = liberalism
-                                expire = "1965.1.1.1"
-                            }
-                        }
+                                                        character = ENG_lang
+                                                        promote_leader = yes
+                                                        country_leader = {
+                                                           ideology = liberalism
+                                                           expire = "1965.1.1.1"
+                                                        }
+                                                }
+                                                promote_character = {
+				                        character = ENG_lang
+				                        ideology = liberalism
+				                        expire = "1965.1.1.1"
+				                 }
 						set_party_name = {
 							ideology = democratic 
 							long_name = "Britonic Magisterium"
