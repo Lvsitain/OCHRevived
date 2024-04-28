@@ -24,4 +24,28 @@ characters = {
 			expire="1965.1.1.1"
 		}
 	}
+	ENG_lang = { #reza - "this fella is a character apparently .-." #
+	    name= "Cosmo Gordon Lang"
+	    portraits={
+		    civilian={
+			    large="GFX_portrait_ENG_lang_large"
+		}
+	}
+	country_leader={
+		ideology = liberalism
+		expire="1965.1.1.1"
+	    }
+    }
+	FRA_verdier = { # reza - "and so is this guy"
+		name = "Jean Verdier"
+		portraits = {
+			civilian = {
+				large="GFX_portrait_FRA_verdier_large"
+		}
+	}
+	country_leader = {
+		ideology = liberalism
+		expire="1965.1.1.1"
+	    }
+	}
 }
