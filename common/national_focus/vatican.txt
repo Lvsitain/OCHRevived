@@ -3814,6 +3814,8 @@ focus_tree = {
 		icon = GFX_focus_spr_anarchism_knows_no_borders
 		x = 5
 		y = 19
+        
+        allow_branch = { has_completed_focus = VAT_spread_christianity }
 
 		cost = 5
 		search_filters = {
