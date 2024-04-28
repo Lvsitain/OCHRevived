@@ -284,6 +284,13 @@
  VAT_LESSER_EVILS_desc:0 "If our ambitions to unite Christendom with the restoration of the Carolingian Empire are to be realised, we must shift our focus towards West and East Francia - France and Germany. Once a united kingdom under Charlemagne, these rival nations will only threaten our existence for as long as they remain independent."
  VAT_THE_FINAL_CRUSADE_desc:0 "For centuries, Christian soldiers dedicated to the task of retrieving the Holy Land braved the elements of the Middle East, driven forward by the promise of eternal salvation in the next life. It was the hope - the quest - of Pope after Pope, and yet, this noble goal was never permanently achieved. With the Son risen again, it is time to revive that old dream of the Church, and to realise it."
  VAT_monasteries_desc:0 "Since the days of the Enlightenment, we have witnessed a striking collapse in the number of men joining the monastic orders, or women joining the sisterhoods. Abbeys have gone to ruin, left in decay, but the keen diligence of the scribe in his chambers, quill in hand, cannot be allowed to vanish. We shall go about reestablishing the lost orders, and in time, those monasteries of old will see life again."
+ 
+ #reza shit
+ VAT_earthly_ambitions:0 "Worldly Ambitions"
+ VAT_earthly_ambitions_desc:0 "With the final hurdle now defined, it is up to us to aid the Son with the unification of his once lost flock.\nSadly, quite a few of our brothers have taken the Devil's deception has truth.\n\nHowever, no need for worry. For we shall soon liberate them from Sin.\n\n\n\n\n\n\n§HAnd they shall then attain Eternal Joy with our Father, in Heaven.§!"
+ VAT_humanity_redeemed:0 "§HRedemption§!"
+ VAT_humanity_redeemed_desc:0 "And with the entire world united finally, in devotion to the Lord, the time has come to bring them...\n\nTo the Kingdom of God in Heaven.\n\n\n\n\n\n\n\n§CAt long last...§!\n\n§HRedemption is at hand!§!"
+
 
 #Delights
  VAT_HARMONY:0 "Lead the Harmonian Way"
