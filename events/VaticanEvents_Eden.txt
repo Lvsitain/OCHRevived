@@ -766,24 +766,24 @@ country_event = {
 
 country_event = {
 	id = earthambition.1
-	desc = earthambition.desc
-	title = earthambition.t
-	picture = GFX_
+	desc = earthambition1.desc
+	title = earthambition1.t
+	picture = GFX_report_event_generic_military_parade
 
 	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
-		name = earthambition.a
+		name = earthambition1.a
 		VAT = { add_ideas = VAT_earth_ambitions }
 	}
 }
 
 country_event = {
 	id = humanitysaved.0
-	desc = "placeholder"
+	desc = humanitysaved.desc
 	title = "Humanity Redeemed"
-	picture = GFX_
+	picture = GFX_report_event_crowd_in_prague
 
 	is_triggered_only = yes
 	fire_only_once = yes
