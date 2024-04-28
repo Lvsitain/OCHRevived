@@ -1,6 +1,6 @@
 focus_tree = {
 	id = vatican_tree
-	continuous_focus_position = { x = 4000 y = 1500 } # reza - "was too close to some focuses and was on top of others" #
+	continuous_focus_position = { x = 4000 y = 1500 }
 	country = {
 		factor = 0
 		modifier = {
@@ -184,7 +184,7 @@ focus_tree = {
 		}
 	}
 
-        #Panoply for the Guard - ( reza additions )
+    #Panoply for the Guard
 	focus = {
 		id = VAT_panoply_for_the_guard
 		icon = GFX_goal_generic_army_tanks
@@ -307,8 +307,7 @@ focus_tree = {
 		}
 	}
 
-        #Army of God - ( reza additions )
-        focus = {
+	focus = {
 		id = VAT_army_of_god
 		icon = GFX_focus_NORDIC_mon_selector_army
 		x = 1
@@ -1382,6 +1381,10 @@ focus_tree = {
 			set_rule = { can_guarantee_other_ideologies = yes }
 			add_political_power = 50
 			set_cosmetic_tag = PAP_VAT
+			hidden_effect = {
+				annex_country = { target = ITA transfer_troops = yes }
+			    hidden_effect = { ITA = { kill_ideology_leader = fascism } }
+			}
 		}
 	}
 
@@ -1410,17 +1413,20 @@ focus_tree = {
 			}
 		}
 		completion_reward = { #reza - "now pacelli is actually leading neutral" #
-		ITA = {  #reza - "suiz you fucking retard, how is pacelli gonna lead italy if it doesnt even have him as a character" (Why i added the italy history file) #
-		kill_ideology_leader = fascism
-		set_politics = {
+				ITA = {  #reza - "suiz you fucking retard, how is pacelli gonna lead italy if it doesnt even have him as a character" (Why i added the italy history file) #
+				hidden_effect = {
+				kill_ideology_leader = fascism
+				}
+				set_politics = {
 	                ruling_party = neutrality
 	                elections_allowed = no
 	                last_election = "1935.12.17"
 	                election_frequency = 48
 	                long_name = "Italian Curia"
 	                name = "Italian Curia"
-                    }
-		kill_ideology_leader = neutrality
+                }
+				hidden_effect = {
+				kill_ideology_leader = neutrality
                 add_country_leader_role = {
                     character = ITA_eugenio_pacelli
                     promote_leader = yes
@@ -1431,28 +1437,8 @@ focus_tree = {
                 }
                 set_popularities = {
 	                neutrality = 100
-                            }
-			}
-		
-			
-			transfer_state = 158
-			add_state_core = 158
-			transfer_state = 159
-			add_state_core = 159
-			transfer_state = 160
-			add_state_core = 160
-			transfer_state = 39
-			add_state_core = 39
-			transfer_state = 736
-			add_state_core = 736
-			transfer_state = 161
-			add_state_core = 161
-			transfer_state = 850
-			add_state_core = 850
-			transfer_state = 852
-			transfer_state = 163
-			puppet = ITA
-			hidden_effect = {
+                }			
+			    puppet = ITA
 				ITA = {
 					set_party_name = {
    						ideology = communism
@@ -1472,9 +1458,28 @@ focus_tree = {
 					load_focus_tree = generic_focus
 					set_cosmetic_tag = PAP_ITA
 				}
-			}
+		    } 
+	    }
+		VAT = {
+			transfer_state = 158
+			add_state_core = 158
+			transfer_state = 159
+			add_state_core = 159
+			transfer_state = 160
+		    add_state_core = 160
+			transfer_state = 39
+			add_state_core = 39
+			transfer_state = 736
+			add_state_core = 736
+			transfer_state = 161
+			add_state_core = 161
+			transfer_state = 850
+			add_state_core = 850
+			transfer_state = 852
+			transfer_state = 163
 		}
-	}
+    }
+}
 
 	#Embrace Political Refugees
 	focus = {
@@ -1554,6 +1559,7 @@ focus_tree = {
 						}
 						declare_war_on = {
 							target = ITA
+							type = annex_everything
 						}
 						transfer_state = 115
 						transfer_state = 156
@@ -1644,7 +1650,7 @@ focus_tree = {
 		prerequisite = { focus = VAT_declare_the_papal_states  }
 		completion_reward = {
 			hidden_effect = { 
-		        mark_focus_tree_layout_dirty = yes
+					mark_focus_tree_layout_dirty = yes
 			}
 			custom_effect_tooltip = visions_tooltip
 			country_event = { id = vatican.26 days = 1 }
@@ -2330,7 +2336,7 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = VAT_fromabove  }
-#		allow_branch = { OR = { has_completed_focus =  VAT_frombelow has_completed_focus =  VAT_fromabove } }
+	#	allow_branch = { OR = { has_completed_focus =  VAT_frombelow has_completed_focus =  VAT_fromabove } }
 		mutually_exclusive = { focus = VAT_unleashthefinaljudgement }
 		completion_reward = {
 			hidden_effect = { kill_country_leader = yes drop_cosmetic_tag = yes }
@@ -2728,7 +2734,7 @@ focus_tree = {
 		prerequisite = { focus = VAT_look_east focus = VAT_look_west }
 		completion_reward = {
 			add_stability = 0.5
-			add_ideas = land_of_pleanty
+			add_ideas = land_of_plenty
 		}
 	}
 	#
@@ -3479,6 +3485,7 @@ focus_tree = {
 					set_politics = { ruling_party = democratic elections_allowed = no }
 					remove_ideas = { FRA_victors_of_wwi FRA_disjointed_government FRA_political_violence FRA_inefficient_economy_1 FRA_inefficient_economy_2 }
 					set_cosmetic_tag = PAP_FRA
+					kill_ideology_leader = democratic
 					promote_character = FRA_verdier
 					set_party_name = {
 						ideology = democratic
@@ -3554,6 +3561,7 @@ focus_tree = {
 						remove_ideas = { george_v ENG_king_edward ENG_king_edward_fascism ENG_george_vi ENG_the_war_to_end_all_wars stiff_upper_lip }
 						VAT = { country_event = { id = vatican.138 days = 5 } }
 						set_cosmetic_tag = PAP_ENG
+						kill_ideology_leader = democratic
 						promote_character = ENG_lang
 						set_party_name = {
 							ideology = democratic 
@@ -3776,13 +3784,13 @@ focus_tree = {
 		    }
 	    }
 
-	focus = {
+    focus = {
 		id = VAT_earthly_ambitions
 		icon = GFX_focus_spr_anarchism_knows_no_borders
 		x = 5
 		y = 19
 
-		cost = 8
+		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
@@ -4592,7 +4600,8 @@ focus_tree = {
 		prerequisite = { focus = VAT_Amazonian_Dream }
 		completion_reward = {
 			add_ideas = master_race
-		}
-	}
-}
+		        }
+	        }
+        }
+    }
 }
