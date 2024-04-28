@@ -3486,7 +3486,14 @@ focus_tree = {
 					remove_ideas = { FRA_victors_of_wwi FRA_disjointed_government FRA_political_violence FRA_inefficient_economy_1 FRA_inefficient_economy_2 }
 					set_cosmetic_tag = PAP_FRA
 					kill_ideology_leader = democratic
-					promote_character = FRA_verdier
+					add_country_leader_role = {
+                    character = FRA_verdier
+                    promote_leader = yes
+                    country_leader = {
+                        ideology = liberalism
+                        expire = "1965.1.1.1"
+                        }
+                    }
 					set_party_name = {
 						ideology = democratic
 						long_name = "Holy French Senate"
@@ -3562,7 +3569,14 @@ focus_tree = {
 						VAT = { country_event = { id = vatican.138 days = 5 } }
 						set_cosmetic_tag = PAP_ENG
 						kill_ideology_leader = democratic
-						promote_character = ENG_lang
+						add_country_leader_role = {
+                            character = ENG_lang
+                            promote_leader = yes
+                            country_leader = {
+                                ideology = liberalism
+                                expire = "1965.1.1.1"
+                            }
+                        }
 						set_party_name = {
 							ideology = democratic 
 							long_name = "Britonic Magisterium"
@@ -3578,7 +3592,8 @@ focus_tree = {
 								keep_political_leader = yes
 								keep_political_party_members = yes
 							}
-						} else = {
+						}
+						else = {
 							start_civil_war = {
 								ruling_party = democratic
 								ideology = neutrality
@@ -3612,8 +3627,8 @@ focus_tree = {
 						}
 					}
 				}
-		}
-	}
+		    }
+	    }
 	#
 	focus = {
 		id = VAT_WAR_ALLIES
