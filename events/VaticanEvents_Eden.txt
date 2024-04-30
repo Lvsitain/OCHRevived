@@ -789,7 +789,7 @@ country_event = {
 	fire_only_once = yes
 
 	option = {
-		name = "And so it is done."
+		name = "May he Reign, Eternal and Glorious."
 	}
 }
 
