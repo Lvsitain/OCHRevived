@@ -3811,7 +3811,7 @@ focus_tree = {
 
     focus = {
 		id = VAT_earthly_ambitions
-		icon = GFX_focus_spr_anarchism_knows_no_borders
+		icon = GFX_VAT_earthly_ambitions
 		x = 5
 		y = 19
         
@@ -3834,7 +3834,7 @@ focus_tree = {
 
 	focus = {
 		id = VAT_humanity_redeemed
-		icon =  GFX_focus_generic_monarchy_1
+		icon =  GFX_VAT_redemption
 		
         allow_branch = { has_completed_focus = VAT_earthly_ambitions }
 
@@ -3865,7 +3865,6 @@ focus_tree = {
 			}
 		}
 	}
-
 
 #######################################################################
 #######################################################################
