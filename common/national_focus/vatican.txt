@@ -1595,14 +1595,16 @@ focus_tree = {
 					days = 3
 				}
 			}
-		        ITA = {
-			        add_political_power = 1000
+			hidden_effect = {
+		    ITA = {
+				add_political_power = 1000
 				add_power_balance_value = {
 					id = ITA_power_balance
-                                        value = 1
-				}
+                    value = 1
+				    }
+			    }
 			}
-                mark_focus_tree_layout_dirty = yes
+			mark_focus_tree_layout_dirty = yes
 		}
 	}
 
