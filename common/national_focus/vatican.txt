@@ -1595,27 +1595,34 @@ focus_tree = {
 					days = 3
 				}
 			}
+		        ITA = {
+			        add_political_power = 1000
+				add_power_balance_value = {
+					id = ITA_power_balance
+                                        value = 1
+				}
+			}
 		}
 	}
 
-#	#Incite the Fear of God
-#	focus = {
-#		id = VAT_incite_the_fear_of_god
-#		icon = GFX_goal_generic_attack_allies
-#		x = 11
-#		y = 5
-#		cost = 2
-#		search_filters = {
-#			FOCUS_FILTER_POLITICAL
-#		}
-#		prerequisite = { focus = VAT_the_papal_revolution }
-#		completion_reward = {
-#			add_timed_idea = {
-#			    idea = fear_of_god
-#			    days = 150
-#			}
-#		}
-#	}
+	#Incite the Fear of God
+	focus = {
+		id = VAT_incite_the_fear_of_god
+		icon = GFX_goal_generic_attack_allies
+		x = 11
+		y = 5
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = VAT_the_papal_revolution }
+         	completion_reward = {
+			add_timed_idea = {
+			    idea = fear_of_god
+			    days = 150
+			}
+    	        }
+	}
 
 	#Restore Order
 	focus = {
