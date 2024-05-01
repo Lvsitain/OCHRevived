@@ -790,6 +790,16 @@ country_event = {
 
 	option = {
 		name = "May he Reign, Eternal and Glorious."
+		VAT = {
+			set_politics = {
+                ruling_party = neutrality
+                elections_allowed = no
+                last_election = "1935.12.25"
+                election_frequency = 48
+                long_name = "The Heavenly Throne"
+                name = "The Heavenly Throne""
+                       }
+		}
 	}
 }
 
